@@ -1,15 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang=es>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clone de Google</title>
+<meta charset=UTF-8 />
+<meta name=viewport content="width=device-width, initial-scale=1.0" />
+<title>Google Clone</title>
+<link rel=stylesheet href=styles.css />
+<link rel=icon type=image/png sizes=16x16 href="https://cdn.icon-icons.com/icons2/729/PNG/512/google_icon-icons.com_62736.png"/>
 </head>
 <body>
-    
-</body>
-
+<header>
+<nav>
+<ul>
+<li>
+<a href="https://mail.google.com/mail/?authuser=0&ogbl">Gmail</a>
+</li>
+<li>
+<a href="https://www.google.com/imghp?hl=es-419&authuser=0&ogbl">Imágenes</a>
+</li>
+<li>
+<button id=apps-button class=icon-button>
+<img src=https://ssl.gstatic.com/gb/images/bar/al-icon.png alt=Apps class=icon-img />
+</button>
+<div id=modal class=modal>
+<div class=modal-content>
+<span class=close-btn>&times;</span>
+<p>Este es un clone de Google.com, Elaborado por B4sal.</p>
+</div>
+</div>
+</li>
+<li>
+<img src="https://th.bing.com/th/id/R.acdec220c90cda5d737e788836aa205e?rik=Bg0%2bkepk7%2fheoQ&pid=ImgRaw&r=0" alt="Profile Picture" class=profile-pic />
+</li>
+</ul>
+</nav>
+</header>
+<main>
+<div class=logo>
+<img src=https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png alt="Google Logo" id=google-logo />
+</div>
+<div class=search-bar>
+<svg class=search-icon viewBox="0 0 24 24">
+<path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+</svg>
+<input type=text id=search-input placeholder />
+<img src=https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-25-1024.png alt=Microphone class=search-icon-img id=voice-search />
+<img src=https://freshlookapp.com/wp-content/uploads/2020/04/Google-Lens-What-it-is-How-to-install-it-Everything-you-can-do-with-it.png alt="Google Lens" class=search-icon-img id=image-search />
+</div>
+<div class=buttons>
+<button id=text-search-button>Buscar con Google</button>
+<button onclick="window.location.href='https://doodles.google/'">
+Voy a tener suerte
+</button>
+</div>
+</main>
 <footer>
-    
+<div class=footer-top>
+<p>México</p>
+</div>
+<div class=footer-bottom>
+<div class=footer-left>
+<ul>
+<li>
+<a href="https://about.google/?utm_source=google-MX&utm_medium=referral&utm_campaign=hp-footer&fg=1">Sobre Google</a>
+</li>
+<li>
+<a href="https://www.google.com/intl/es-419_mx/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Publicidad</a>
+</li>
+<li>
+<a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Negocios</a>
+</li>
+<li>
+<a href="https://google.com/search/howsearchworks/?fg=1">Cómo funciona la Búsqueda</a>
+</li>
+</ul>
+</div>
+<div class=footer-right>
+<ul>
+<li>
+<a href="https://policies.google.com/privacy?hl=es-419&fg=1">Privacidad</a>
+</li>
+<li>
+<a href="https://policies.google.com/terms?hl=es-419&fg=1">Condiciones</a>
+</li>
+<li><button id=mode-toggle>Preferencias</button></li>
+</ul>
+</div>
+</div>
 </footer>
+<script src=script.js></script>
+</body>
 </html>
